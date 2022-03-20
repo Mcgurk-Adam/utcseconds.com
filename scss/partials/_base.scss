@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  border: none;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-overflow-scrolling: touch;
+  font-family: 'Montserrat', sans-serif;
+  &:focus {
+    outline: none;
+  }
+  &::after, &::before {
+    content: "";
+    display: none;
+    box-sizing: border-box;
+  }
+}
+
+html, body {
+  overflow-x: hidden;
+  height: 100%;
+  background-color: var(--gray-8);
+}
+
+a {
+  text-decoration: none;
+}
+
+a, button {
+  cursor: pointer;
+  &[disabled] {
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+}
+
+.pressed-animation:active {
+  transform: scale(.98);
+  opacity: .9;
+}
