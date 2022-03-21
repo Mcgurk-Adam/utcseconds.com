@@ -12,6 +12,7 @@ node_modules/
 # app file ignores
 *.js
 *.css
+*.map
 # allowing test files
 !cypress/**/*
 
