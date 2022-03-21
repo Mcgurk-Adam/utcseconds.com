@@ -8,7 +8,7 @@ header {
   img.logo {
     height: 35px;
     width: auto;
-    transition: 500ms all;
+    transition: 500ms transform;
     &.rotate {
       transform: rotate(180deg);
     }
@@ -26,10 +26,10 @@ header {
 
 h1 {
   padding: 50px 0;
-  font-size: 40px;
+  font-size: 2rem;
 }
 
 p {
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 25px;
 }
