@@ -1,0 +1,24 @@
+form {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+label.regular-input {
+  max-width: 400px;
+  width: 95%;
+  display: flex;
+  flex-flow: column nowrap;
+  font-size: 1rem;
+  input:not([type=file]):not([type=radio]):not([type=checkbox]) {
+	width: 100%;
+  }
+}
+
+input:not([type=file]):not([type=radio]):not([type=checkbox]) {
+  width: 95%;
+  max-width: 400px;
+  border-radius: 4px;
+  background-color: var(--gray-4);
+  height: 40px;
+  text-indent: 15px;
+}

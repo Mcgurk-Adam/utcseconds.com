@@ -6,6 +6,7 @@
     "outFile": "../js/app.js"
   },
   "files": [
-    "index.ts"
+    "index.ts",
+    "BetterDate.ts"
   ]
 }
