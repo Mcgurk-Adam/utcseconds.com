@@ -1,6 +1,14 @@
 form {
   display: flex;
   flex-flow: column nowrap;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+  button[type=submit] {
+    margin-top: 20px;
+    max-width: 400px;
+    width: 95%;
+  }
 }
 
 label.regular-input {
@@ -10,6 +18,7 @@ label.regular-input {
   flex-flow: column nowrap;
   font-size: 1rem;
   input:not([type=file]):not([type=radio]):not([type=checkbox]) {
+    margin-top: 3px;
 	width: 100%;
   }
 }
@@ -21,4 +30,5 @@ input:not([type=file]):not([type=radio]):not([type=checkbox]) {
   background-color: var(--gray-4);
   height: 40px;
   text-indent: 15px;
+  color: var(--gray-9)
 }
